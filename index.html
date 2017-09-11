@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  </head>
+  <body>
+    
+  </body>
+
+  <script>
+    class TestArray {
+
+      constructor() {
+        this.elements = [];
+      }
+
+      pushElem(elem) {
+        this.elements.push(elem);
+
+        return this;
+      }
+
+      getAll() {
+        return this.elements;
+      }
+    }
+
+    let obj = new TestArray();
+    obj.pushElem(1).pushElem(2).pushElem(3);
+    console.log(obj.getAll());
+
+  </script>
+</html>
